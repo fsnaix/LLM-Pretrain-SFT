@@ -177,7 +177,6 @@ def make_pretrain_data_module(tokenizer: transformers.PreTrainedTokenizer, data_
 def train():
     parser = transformers.HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
-
     model = transformers.AutoModelForCausalLM.from_pretrained(
         model_args.model_name_or_path,
         trust_remote_code=True, 

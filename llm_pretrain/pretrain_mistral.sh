@@ -6,7 +6,7 @@ MODEL_PATH=/home/reacubeth/models/mistralai/Mistral-7B-v0.1
 TITLE=mistral-7b-v0.1-pretrain
 DATA=data
 
-OUTPUT_DIR=result
+OUTPUT_DIR=out
 mkdir $OUTPUT_DIR
 
 echo ===== current OUTPUT_DIR is $OUTPUT_DIR =====
