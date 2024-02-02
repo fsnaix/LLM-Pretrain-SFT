@@ -56,7 +56,7 @@ class RawPretrainDataset(Dataset):
     
     def read_md(self, pretrain_data_path, tokenizer):
         logging.warning('Loading data from ' + pretrain_data_path)
-        with open(pretrain_data_path, "r") as f:
+        with open(pretrain_data_path, "r", encoding="utf-8", errors="ignore") as f:
             raw_file = f.read()
         return f"{raw_file}{tokenizer.eos_token}"
 

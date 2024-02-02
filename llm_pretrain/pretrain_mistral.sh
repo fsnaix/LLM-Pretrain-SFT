@@ -34,3 +34,4 @@ torchrun --nproc_per_node=4 --master_port=9919 pretrain.py \
     --fsdp "full_shard auto_wrap" \
     --fsdp_transformer_layer_cls_to_wrap 'MistralDecoderLayer' \
     --tf32 True \
+    --deepspeed "./configs/default_offload_opt_param.json" \

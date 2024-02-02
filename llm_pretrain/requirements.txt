@@ -9,6 +9,7 @@ wandb
 openai
 tensorboard
 tokenizers==0.12.1
-transformers==4.34.0
+transformers
 torch>=1.13.0
 tensorflow
+deepspeed
